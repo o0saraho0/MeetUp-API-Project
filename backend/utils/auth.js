@@ -70,18 +70,8 @@ const requireAuth = function (req, _res, next) {
   return next(err);
 };
 
-// All endpoints that require authentication and the current user does not have the correct role(s) or permission(s).
-// const requirePermission = function (req, _res, next) {
-//   const currentUser = req.user;
-
-//   const err = new Error("Forbidden");
-//   err.status = 403;
-//   return next(err);
-// };
-
 module.exports = {
   setTokenCookie,
   restoreUser,
   requireAuth,
-  // requirePermission,
 };
