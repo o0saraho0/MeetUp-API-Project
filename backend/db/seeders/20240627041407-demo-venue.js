@@ -10,6 +10,7 @@ if (process.env.NODE_ENV === "production") {
 
 const venueData = [
   {
+    groupId: 1,
     address: "456 Maple Street",
     city: "San Francisco",
     state: "CA",
@@ -17,6 +18,7 @@ const venueData = [
     lng: -122.4194155,
   },
   {
+    groupId: 2,
     address: "789 Elm Avenue",
     city: "Chicago",
     state: "IL",
@@ -24,6 +26,7 @@ const venueData = [
     lng: -87.6297982,
   },
   {
+    groupId: 3,
     address: "101 Pine Road",
     city: "Los Angeles",
     state: "CA",
@@ -31,6 +34,7 @@ const venueData = [
     lng: -118.2436849,
   },
   {
+    groupId: 4,
     address: "202 Oak Boulevard",
     city: "Houston",
     state: "TX",
@@ -38,6 +42,7 @@ const venueData = [
     lng: -95.3698028,
   },
   {
+    groupId: 1,
     address: "303 Cedar Lane",
     city: "Miami",
     state: "FL",
