@@ -21,6 +21,8 @@ module.exports = (sequelize, DataTypes) => {
       });
       Group.hasMany(models.Membership, {
         foreignKey: "groupId",
+        onDelete: "CASCADE",
+        hooks: true,
       });
       Group.belongsTo(models.User, {
         foreignKey: "organizerId",
@@ -32,6 +34,7 @@ module.exports = (sequelize, DataTypes) => {
       organizerId: {
         type: DataTypes.INTEGER,
         references: { model: "Users" },
+        onDelete: "CASCADE",
       },
       name: {
         type: DataTypes.STRING,
